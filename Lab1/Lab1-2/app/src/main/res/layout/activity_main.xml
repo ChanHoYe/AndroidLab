@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:stretchColumns="1">
         <!-- Set stretchColumns of second column -->
+
         <TableRow>
             <TextView
                 android:text="name"/>
@@ -42,9 +43,9 @@
             android:id="@+id/printTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="contents"
             android:layout_below="@+id/btn_clear"/>
         <!-- Set location that behind of 'CLEAR' button -->
 
     </RelativeLayout>
-
 </LinearLayout>
