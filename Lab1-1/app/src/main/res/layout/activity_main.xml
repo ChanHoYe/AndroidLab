@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHANGE IMAGE"
+        android:onClick="onClicked"/>
+    <!-- Use onClick property, Set the name of method that executes when button pressed. -->
+
+    <!-- Use FrameLayout. Two ImageViews conflict -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/red_android" />
+        <!-- First ImageView is visible initially. -->
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@drawable/blue_android" />
+        <!-- Second ImageView is invisible initially. -->
+    </FrameLayout>
+</LinearLayout>

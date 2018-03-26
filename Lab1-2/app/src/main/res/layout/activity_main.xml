@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <!-- Set stretchColumns of second column -->
+        <TableRow>
+            <TextView
+                android:text="name"/>
+            <EditText
+                android:id="@+id/editTxt"
+                android:hint="type your name"/>
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"/>
+
+        <Button
+            android:id="@+id/btn_print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_clear"
+            android:text="PRINT"/>
+        <!-- Set location that right of 'CLEAR' button -->
+
+        <TextView
+            android:id="@+id/printTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_clear"/>
+        <!-- Set location that behind of 'CLEAR' button -->
+
+    </RelativeLayout>
+
+</LinearLayout>
