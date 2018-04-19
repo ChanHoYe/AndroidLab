@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:text="성명"/>
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="성별"/>
+        <TextView
+            android:id="@+id/txtSex"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="수신여부"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/txtCheck"
+            android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+        <View
+            android:layout_span="2"></View>
+        <Button
+            android:id="@+id/btnBack"
+            android:text="이전"/>
+    </TableRow>
+
+</TableLayout>
