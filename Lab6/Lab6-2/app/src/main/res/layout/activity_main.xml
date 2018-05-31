@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    <TableRow>
+
+        <TextView
+            android:layout_span="3"
+            android:gravity="center"
+            android:text="Shared preference example"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="학번" />
+
+        <EditText
+            android:id="@+id/edit_id"
+            android:layout_span="2"
+            android:hint="..." />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:text="이름" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_span="2"
+            android:hint="..." />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btn_read"
+            android:text="불러오기" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:text="저장하기" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:text="초기화" />
+    </TableRow>
+
+</TableLayout>
